@@ -6,11 +6,9 @@ var botao_calculo = document.getElementById('botao');
 var calculo = 0;
 
 botao_calculo.addEventListener('click', function(){
-    console.log("TESTE")
-    var numero1 = Number(input1.value);
+    var numero1 = Number(input1.value); // value faz com que tenha acesso somente ao que o usuário digitou
     var numero2 = Number(input2.value);
     var operacao_selecionada = operacao.value;
-    console.log(operacao_selecionada)
     if (operacao_selecionada === '+'){
         calculo = (numero1+numero2)
         resultado.innerHTML = calculo
@@ -24,5 +22,4 @@ botao_calculo.addEventListener('click', function(){
         calculo = numero1/numero2
         resultado.innerHTML = calculo
     }
-    
 });
