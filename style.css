@@ -29,7 +29,7 @@ header{
     width: 20%;
     border-radius: 10px;
 }
-#espaco_select{
+#operacao{
     padding-right: 5%;
 }
 .texto_esquerda{
@@ -42,4 +42,8 @@ header{
     background-color: cornflowerblue;
     border: none;
     border-radius: 2px;
+}
+#resultado{
+    padding: 0%;
+    margin: 0%;
 }
