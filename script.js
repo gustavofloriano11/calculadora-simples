@@ -5,7 +5,7 @@ var resultado = document.getElementById('resultado');
 var botao_calculo = document.getElementById('botao');
 var calculo = 0;
 
-botao_calculo.addEventListener('click', function(){
+botao_calculo.addEventListener('click', function(){ // addEventListener faz com que adicione um evento que nesse caso, entre parenteses é o "click" e ao clicar, realiza a function.
     var numero1 = Number(input1.value); // value faz com que tenha acesso somente ao que o usuário digitou
     var numero2 = Number(input2.value);
     var operacao_selecionada = operacao.value;
