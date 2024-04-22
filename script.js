@@ -9,17 +9,22 @@ botao_calculo.addEventListener('click', function(){ // addEventListener faz com 
     var numero1 = Number(input1.value); // value faz com que tenha acesso somente ao que o usuário digitou
     var numero2 = Number(input2.value);
     var operacao_selecionada = operacao.value;
-    if (operacao_selecionada === '+'){
-        calculo = (numero1+numero2)
-        resultado.innerHTML = calculo
-    } else if (operacao_selecionada === '-'){
-        calculo = (numero1-numero2)
-        resultado.innerHTML = calculo
-    } else if (operacao_selecionada === 'x'){
-        calculo = (numero1*numero2)
-        resultado.innerHTML = calculo
-    } else if (operacao_selecionada === '/') {
-        calculo = numero1/numero2
-        resultado.innerHTML = calculo
+    switch (operacao_selecionada){ // swicth e case é referente a escolha caso do portugol
+        case ('+'):
+            calculo = (numero1+numero2)
+            resultado.innerHTML = calculo 
+            break; 
+        case ('-'):
+            calculo = (numero1-numero2)
+            resultado.innerHTML = calculo  
+            break;    
+        case ('x'):
+            calculo = (numero1*numero2)
+            resultado.innerHTML = calculo
+            break;
+        case ('/'):
+            calculo = numero1/numero2
+            resultado.innerHTML = calculo
+            break;
     }
 });
